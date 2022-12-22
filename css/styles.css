@@ -26,15 +26,23 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.bio-container p {
+
+.bio-content {
   width: 50%;
   height: 150px;
+}
+.bio-content p {
+  height: 100px;
+}
+.bio-content a {
+  display: block;
 }
 
 .skills-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 0 30px 0 30px;
 }
 .skills-container figure {
   width: 10%;
@@ -57,4 +65,7 @@ body {
 }
 .projects-container article p {
   height: 150px;
+}
+.projects-container article a {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */

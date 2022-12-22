@@ -32,20 +32,27 @@ body{
 .bio-container{
     display: flex;
     justify-content: space-evenly;
+}
 
-    p{width: 50%; height:150px;}
+.bio-content{
+    width: 50%; 
+    height:150px;
     
+    p{height: 100px;}
+    a{display: block;}
 }
 
 .skills-container{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding:0 30px 0 30px;
 
     figure{width: 10%;}
 
     img{width: 50px; height: 50px;}
     i{width: 50px; height: 50px;}
+    
 }
 
 .projects-container{
@@ -56,5 +63,9 @@ body{
         width: 25%;
 
         p{height: 150px;}
+        a{
+            display: block;
+            
+        }
     }
 }
