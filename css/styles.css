@@ -49,11 +49,6 @@ body {
 }
 .skills-container img {
   width: 50px;
-  height: 50px;
-}
-.skills-container i {
-  width: 50px;
-  height: 50px;
 }
 
 .projects-container {
@@ -64,8 +59,38 @@ body {
   width: 25%;
 }
 .projects-container article p {
-  height: 150px;
+  height: 250px;
 }
 .projects-container article a {
+  margin-top: 10px;
   display: block;
+}
+
+.bounce {
+  -webkit-animation: bounce 0.5s ease-in;
+          animation: bounce 0.5s ease-in;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }/*# sourceMappingURL=styles.css.map */

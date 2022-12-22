@@ -34,3 +34,11 @@ function callback(entries, observer){
 let observer = new IntersectionObserver(callback, options);
 let targets = document.querySelectorAll('.unloaded');
 targets.forEach((target)=>observer.observe(target));
+
+//hover animation
+function hoverAnimation(element){
+    if(element.classList.contains("bounce"))
+        return;
+    element.classList.add("bounce");
+    setTimeout(()=>{console.log("removing class");element.classList.remove("bounce")}, 500);
+}

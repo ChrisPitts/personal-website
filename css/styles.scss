@@ -37,7 +37,7 @@ body{
 .bio-content{
     width: 50%; 
     height:150px;
-    
+
     p{height: 100px;}
     a{display: block;}
 }
@@ -49,9 +49,7 @@ body{
     padding:0 30px 0 30px;
 
     figure{width: 10%;}
-
-    img{width: 50px; height: 50px;}
-    i{width: 50px; height: 50px;}
+    img{width: 50px;}
     
 }
 
@@ -62,10 +60,15 @@ body{
     article{
         width: 25%;
 
-        p{height: 150px;}
-        a{
-            display: block;
-            
-        }
+        p{height: 250px;}
+        a{margin-top: 10px; display: block;}
     }
+}
+
+.bounce{animation: bounce 0.5s ease-in;}
+
+@keyframes bounce {
+    0%{transform: translateY(0%);}
+    50%{transform: translateY(-50%);}
+    100%{transform: translateY(0%);}
 }
