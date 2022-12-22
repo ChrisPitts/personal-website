@@ -4,11 +4,22 @@ body {
   box-sizing: border-box;
   text-align: center;
   background: black;
-  color: rgb(70, 161, 197);
+  color: lime;
 }
 
-section.skills, section.contact {
-  background-color: navy;
+.unloaded {
+  color: black;
+}
+
+.animated::after {
+  content: "|";
+}
+
+.skills, .contact {
+  background-color: rgb(0, 0, 36);
+}
+.skills.unloaded, .contact.unloaded {
+  color: rgb(0, 0, 36);
 }
 
 .bio-container {
@@ -17,6 +28,7 @@ section.skills, section.contact {
 }
 .bio-container p {
   width: 50%;
+  height: 150px;
 }
 
 .skills-container {
@@ -36,6 +48,13 @@ section.skills, section.contact {
   height: 50px;
 }
 
-@-webkit-keyframes bounce {}
-
-@keyframes bounce {}/*# sourceMappingURL=styles.css.map */
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+}
+.projects-container article {
+  width: 25%;
+}
+.projects-container article p {
+  height: 150px;
+}/*# sourceMappingURL=styles.css.map */

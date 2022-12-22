@@ -1,7 +1,7 @@
 $bg-color-1: black;
-$bg-color-2: navy;
+$bg-color-2: rgb(0, 0, 36);
 
-$text-color-1 : rgb(70, 161, 197);
+$text-color-1 : lime;
 
 body{
     margin: 0px;
@@ -12,15 +12,28 @@ body{
     color: $text-color-1;
 }
 
-section{
-    &.skills, &.contact {background-color: $bg-color-2}
+.unloaded{
+    color: $bg-color-1;
 }
+
+.animated::after{
+    content: '|';
+}
+
+.skills, .contact {
+    background-color: $bg-color-2;
+
+    &.unloaded{
+        color: $bg-color-2;
+    }
+}
+
 
 .bio-container{
     display: flex;
     justify-content: space-evenly;
 
-    p{width: 50%;}
+    p{width: 50%; height:150px;}
     
 }
 
@@ -35,6 +48,13 @@ section{
     i{width: 50px; height: 50px;}
 }
 
-@keyframes bounce{
+.projects-container{
+    display: flex;
+    justify-content: space-around;
 
+    article{
+        width: 25%;
+
+        p{height: 150px;}
+    }
 }
