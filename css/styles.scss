@@ -1,6 +1,40 @@
+$bg-color-1: black;
+$bg-color-2: navy;
+
+$text-color-1 : rgb(70, 161, 197);
+
 body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-align: center;
+    background: black;
+    color: $text-color-1;
+}
+
+section{
+    &.skills, &.contact {background-color: $bg-color-2}
+}
+
+.bio-container{
+    display: flex;
+    justify-content: space-evenly;
+
+    p{width: 50%;}
+    
+}
+
+.skills-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    figure{width: 10%;}
+
+    img{width: 50px; height: 50px;}
+    i{width: 50px; height: 50px;}
+}
+
+@keyframes bounce{
+
 }
