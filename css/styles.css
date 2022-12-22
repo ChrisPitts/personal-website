@@ -56,10 +56,13 @@ body {
   justify-content: space-around;
 }
 .projects-container article {
-  width: 25%;
+  width: 30%;
+  background-color: rgb(0, 0, 36);
+  padding: 10px;
+  border-radius: 8px;
 }
 .projects-container article p {
-  height: 250px;
+  height: 240px;
 }
 .projects-container article a {
   margin-top: 10px;

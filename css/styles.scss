@@ -1,5 +1,6 @@
 $bg-color-1: black;
 $bg-color-2: rgb(0, 0, 36);
+$bg-color-3: rgb(71, 71, 71);
 
 $text-color-1 : lime;
 
@@ -58,9 +59,12 @@ body{
     justify-content: space-around;
 
     article{
-        width: 25%;
+        width: 30%;
+        background-color: $bg-color-2;
+        padding: 10px;
+        border-radius: 8px;
 
-        p{height: 250px;}
+        p{height: 240px;}
         a{margin-top: 10px; display: block;}
     }
 }
